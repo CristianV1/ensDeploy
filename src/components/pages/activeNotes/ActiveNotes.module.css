@@ -1,0 +1,151 @@
+.notes__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15px;
+  column-gap: 15px;
+  padding: 15px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #808080;
+}
+
+.navbar__title {
+  font-size: 45px;
+  font-family: bold;
+  margin-right: 15px;
+}
+
+.navbar__createButton {
+  padding: 10px;
+  font-size: 18px;
+  margin-right: 15px;
+
+  box-shadow: 6px 5px 4px 0px rgba(0, 0, 0, 0.41);
+}
+
+.navbar__archivedLink {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+}
+
+/*=======================*/
+/*create modal styles*/
+/*=======================*/
+
+.createNewNote__container__dark {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #0000008a;
+}
+
+.createNewNote__container {
+  position: relative;
+  z-index: 5;
+  border: 1px solid #000;
+  width: 550px;
+  background-color: #fff;
+  padding: 20px 40px;
+}
+
+.createNewNote__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.createNewNote__inputs__container label {
+  display: block;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.createNewNote__inputs__container > input {
+  border: 1px solid #808080;
+  width: 100%;
+  padding: 5px;
+}
+
+.createNewNote__inputs__container > textarea {
+  border: 1px solid #808080;
+  padding: 5px;
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+.createNewNote__buttons__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.createNewNote__buttons__container > input {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 700px) {
+  .notes__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*categories*/
+
+.categories__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+  height: 100px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 10px;
+  border: 1px solid #808080;
+}
+.createNewCategory__container {
+  margin-top: 10px;
+}
+
+.createNewCategory__input {
+  border: 1px solid #808080;
+  margin-right: 46px;
+  padding: 5px;
+  width: 70%;
+}
+
+.createNewCategory__button {
+  border: 1px solid #808080;
+
+  padding: 5px;
+  width: 20%;
+}
+
+/*Filter*/
+
+.filter__container {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.filter__span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.filter__select {
+  width: 200px;
+  padding: 8px;
+}
